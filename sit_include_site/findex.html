@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>StarInfoTech Co.,Ltd</title>
+<link rel="stylesheet" type="text/css" href="./css/topf.css">
+
+<!-- jQuery-1.11.4 jQueryUI-1.11.4 css-1.11.4 -->
+<script src="./jquery/jquery.min.js" type="text/javascript"></script>
+<script src="./jquery/jquery-ui.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui.theme.min.css">
+
+<!-- Bootstrap -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.min.css">
+
+<script language="javascript">
+<!--
+$(function(){
+	//文字を落とすのはcanvas機能を採用しています。
+	//canvasについて詳しくはないので、ネットで見付けたソースを元に変更して作成。
+	//"use strict";
+	var Drops = function() {
+		this.canvas = null;
+		this.ctx = null;
+		this.str = "ＳＴＡＲＩＮＦＯＴＥＣＨ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　";
+		this.strArray = this.str.split("");
+		this.fontSize = 72;
+		this.font = '72px sans-serif';
+		this.columns = 0;
+		this.dropArray = [];
+		this.initialize();
+	};
+	Drops.prototype.initialize = function() {
+		this.canvas = document.getElementById("canvas");
+		if(!this.canvas.getContext) throw new Error("cannot get context.");
+		this.ctx = this.canvas.getContext("2d");
+		this.canvas.width = window.innerWidth;
+		this.canvas.height = window.innerHeight;
+		this.columns = this.canvas.width / this.fontSize;
+		for(var i = 0; i < this.columns; i++) {
+			this.dropArray[i] = 1;
+		}
+	};
+	Drops.prototype.draw = function() {
+		this.ctx.fillStyle = "rgba(255, 255, 255, 0.25)";
+		this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+		this.ctx.fillStyle = "#ff6347";
+		this.ctx.font = this.font;
+		for(var i = 0; i < this.columns; i++) {
+			var text = this.strArray[Math.floor(Math.random() * this.strArray.length)];
+			this.ctx.fillText(text, i * this.fontSize, this.dropArray[i] * this.fontSize);
+			if(this.dropArray[i] * this.fontSize > this.canvas.height || Math.random() > 0.95) {
+				this.dropArray[i] = 0;
+			}
+			this.dropArray[i]++;
+		}
+	};
+	Drops.prototype.main = function() {
+		var instance = this;
+		setInterval(function() {
+			instance.draw(); 
+		}, 275);
+	};
+	var drops = new Drops();
+	drops.main();
+
+
+	$("ul#menu").hide();
+	$("#menus").click(function(){
+		$("#menu").show();
+		$("#menus").css('background-color','#A52B34');
+	});
+	$("#menu").hover(function(){
+	},function(){
+		$("ul#menu").hide();
+		$("#menus").css('background-color','transparent');
+	});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<div id="settled">
+	<div id="top">
+		<!--<img src="images/header_logo.png" alt=""/>-->
+	</div>
+	<div id="menusub" class="clearfix">
+		<ul>
+			<li><a href="news.html">新着情報</a></li>
+			<li><a href="policy.html">プライバシーポリシー</a></li>
+			<li><a href="sitemap.html">サイトマップ</a></li>
+		</ul>
+	</div>
+	<div id="menumain">
+		<ul>
+			<li><a href="./">ホーム<br><span class="menumain_sub">Home</span></a></li>
+			<li><a href="company.html">会社情報<br><span class="menumain_sub">Company</span></a></li>
+			<li><a href="product.html">製品一覧<br><span class="menumain_sub">Product</span></a></li>
+			<li><a href="service.html">サービス<br><span class="menumain_sub">Service</span></a></li>
+			<li><a href="safety.html">安心への取組み<br><span class="menumain_sub">Match to relief</span></a></li>
+			<li><a href="seminar.html">セミナー出展情報<br><span class="menumain_sub">Seminar submitting information</span></a></li>
+			<li><a href="recruit.html">採用情報<br><span class="menumain_sub">Recruit</span></a></li>
+			<li><a href="contact.html">お問い合わせ<br><span class="menumain_sub">Contact</span></a></li>
+		</ul>
+	</div>
+</div>
+<div id="container">
+	<div id="sub1">
+		<img src="images/temp_topix.gif" class="" alt=""/>
+		<span class="span_sub1">
+		</span>
+	</div>
+	<div style="padding-top: 60px; font-size: 12px;">
+		スターインフォテックは、特殊鋼の総合メーカー大同特殊鋼のグループ会社です。<br>
+	</div>
+	<div id="sub2">
+		<img src="images/gaiyou.png" alt=""/>
+	</div>
+	<div>
+		<!--<a onClick="animatedScroll('#top','2000','linear','');" style="cursor: pointer;">TOPに戻る</a>-->
+		<a href="#top" style="cursor: pointer;">TOPに戻る</a>
+	</div>
+<!--
+	<div id="service" class="sub">
+		<img src="images/subtitle_service.gif" alt=""/>
+		<div style="width: 1000px; text-align: center; padding-top: 40px;">
+			<img src="images/concept_service.png" alt=""/>
+			<img src="images/cont_service01.png" alt=""/>
+			<img src="images/cont_service02.png" alt=""/>
+			<img src="images/cont_service03.png" alt=""/>
+			<img src="images/cont_service04.png" alt=""/>
+			<img src="images/cont_service05.png" alt=""/>
+			<img src="images/cont_service06.png" alt=""/>
+		</div>
+	</div>
+	<div>
+		<a onClick="animatedScroll('#top','3000','linear','');" style="cursor: pointer;">TOPに戻る</a>
+	</div>
+
+	<div id="product" class="sub">
+		<img src="images/subtitle_product.gif" alt=""/>
+		<div style="width: 1000px; text-align: center; padding-top: 40px;">
+			<img src="images/concept_product.png" alt=""/>
+			<img src="images/tabs_product.png" alt="" style="margin-top: 40px;" />
+		</div>
+	</div>
+	<div>
+		<a onClick="animatedScroll('#top','4000','linear','');" style="cursor: pointer;">TOPに戻る</a>
+	</div>
+-->
+	<div id="sub3">
+		<img src="images/foot.png" alt=""/>
+	</div>
+</div>
+<div id="alphabetlayer2">
+	<canvas id="canvas"></canvas>
+</div>
+<div id="bg_menumain">
+</div>
+</body>
+</html>

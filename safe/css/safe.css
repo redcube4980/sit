@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* */
+.safeSection{
+margin-bottom:80px;
+}
+.safeSection h2{
+font-size:28px;
+border-bottom:solid 2px #A21D32;
+color:#A21D32;
+text-align:center;
+line-height:1.7em;
+letter-spacing:0.2em;
+}
+.safeSection h2 span{
+font-size:22px;
+}
+.safeSection h3{
+font-size:17px;
+color:#A21D32;
+text-align:center;
+margin-bottom:30px;
+}
+.safeSection .subTtl{
+font-size:36px;
+font-weight:nomal;
+line-height:1.0em;
+margin-bottom:20px;
+}
+.safeSection p.text{
+font-size:15px;
+padding-bottom:30px;
+}
+.safeColumnSet{
+margin:0 auto 10px;
+width:100%;
+}
+.safeColumn{
+float:left;
+margin:0 15px;
+}
+.safeColumn{
+float:left;
+margin:0 15px;
+}
+.safeSection table{
+}
+.safeSection table th{
+width:135px;
+vertical-align:top;
+}
+.safeSection table td,th{
+padding:10px;
+}
+
+
+@media screen and (max-width:959px){
+#content{
+margin-left:20px;
+margin-right:20px;
+width:calc(100% - 40px);
+}
+}
+
+@media screen and (max-width:599px){
+.section.safeSection table{
+width:100%;
+}
+.section.safeSection table tr,
+.section.safeSection table th,
+.section.safeSection table td,
+.section.safeSection table tbody tr,
+.section.safeSection table tbody tr th,
+.section.safeSection table tbody tr td,
+.section.safeSection table tbody th,
+.section.safeSection table tbody td{
+display:block;
+}
+.section.safeSection table tbody tr th{
+background-color:rgb(141,12,37);
+color:#FFF;
+width:100%;
+}
+.safeColumnSet{
+margin-left:0;
+margin-right:0;
+}
+.safeColumnSet .safeColumn{
+float:none;
+margin-left:0;
+margin-right:0;
+}
+}

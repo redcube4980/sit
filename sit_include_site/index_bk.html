@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000, user-scalable=yes">
+<meta name="keywords" content="スターインフォテック,SIT,大同特殊鋼,特殊鋼,情報システム,大同グループ,システム構築,システム開発,まかせて！勤務表,
+まかせて！「卸」鋼太郎,卸,二次加工,熱処理,スタースチール,愛ちゃんシリーズ,給ちゃんシリーズ">
+<meta name="description" content="株式会社スターインフォテックは大同特殊鋼株式会社のグループ企業です。特殊鋼業界で40年 スキルとノウハウで、 鋼材流通・加工業のニーズに100％お応えいたします。 社会より価値を認められ評価されるカンパニーを目指し、「お客様とともに」「技術を高め」「人を活かす」を柱としています。">
+<title>StarInfoTech Co.,Ltd</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<!--<link rel="stylesheet" type="text/css" href="./css/style.css">-->
+<link rel="stylesheet" type="text/css" href="./css/top.css">
+
+<!-- jQuery-1.11.4 jQueryUI-1.11.4 css-1.11.4 -->
+<script src="./jquery/jquery.min.js" type="text/javascript"></script>
+<script src="./jquery/jquery-ui.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui.theme.min.css">
+
+<!-- Bootstrap -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrapmin..css">
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.min.css">
+
+<script src="/js/scroll.js" type="text/javascript"></script>
+
+<script language="javascript">
+<!--
+$(function(){
+	//文字を落とすのはcanvas機能を採用しています。
+	//canvasについて詳しくはないので、ネットで見付けたソースを元に変更して作成。
+	//"use strict";
+	var Drops = function() {
+		this.canvas = null;
+		this.ctx = null;
+		this.str = "ＳＴＡＲＩＮＦＯＴＥＣＨ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　";
+		this.strArray = this.str.split("");
+		this.fontSize = 72;
+		this.font = '72px sans-serif';
+		this.columns = 0;
+		this.dropArray = [];
+		this.initialize();
+	};
+	Drops.prototype.initialize = function() {
+		this.canvas = document.getElementById("canvas");
+		if(!this.canvas.getContext) throw new Error("cannot get context.");
+		this.ctx = this.canvas.getContext("2d");
+		this.canvas.width = window.innerWidth;
+		this.canvas.height = window.innerHeight;
+		this.columns = this.canvas.width / this.fontSize;
+		for(var i = 0; i < this.columns; i++) {
+			this.dropArray[i] = 1;
+		}
+	};
+	Drops.prototype.draw = function() {
+		this.ctx.fillStyle = "rgba(255, 255, 255, 0.25)";
+		this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+		this.ctx.fillStyle = "#ff6347";
+		this.ctx.font = this.font;
+		for(var i = 0; i < this.columns; i++) {
+			var text = this.strArray[Math.floor(Math.random() * this.strArray.length)];
+			this.ctx.fillText(text, i * this.fontSize, this.dropArray[i] * this.fontSize);
+			if(this.dropArray[i] * this.fontSize > this.canvas.height || Math.random() > 0.95) {
+				this.dropArray[i] = 0;
+			}
+			this.dropArray[i]++;
+		}
+	};
+	Drops.prototype.main = function() {
+		var instance = this;
+		setInterval(function() {
+			instance.draw(); 
+		}, 275);
+	};
+	var drops = new Drops();
+	//drops.main();
+
+
+	$("ul#menu").hide();
+	$("#menus").click(function(){
+		$("#menu").show();
+		$("#menus").css('background-color','#A52B34');
+	});
+	$("#menu").hover(function(){
+	},function(){
+		$("ul#menu").hide();
+		$("#menus").css('background-color','transparent');
+	});
+
+	$('#top_logo').click(function(){
+		$('html').animate(
+			{
+				scrollTop: $('#container').offset().top - 360
+			},
+			'fast',
+			'linear'
+		);
+	});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<div id="settled" class="clearfix">
+	<div id="top" class="clearfix">
+		<!--
+		<div id="top_logo"></div>
+		-->
+		<div id="top_logo">
+			<a href="/"><img src="../images/header_ttl.png" width="294" height="107" alt="スターインフォテック トップページヘ"></a>
+		</div>
+		<div id="top_copy"></div>
+	</div>
+
+	<div id="menusub" class="clearfix">
+		<ul>
+			<li><a href="news.html">新着情報</a></li>
+			<li><a href="/policy/privacy.html">プライバシーポリシー</a></li>
+			<li><a href="sitemap.html">サイトマップ</a></li>
+		</ul>
+	</div>
+
+	<div id="menumain_band">
+		<div id="menumain">
+			<ul class="level1 clearfix">
+				<li>
+					<div><a href="../">ホーム<br><span class="menumain_sub">Home</span></a></div>
+				</li>
+				<li>
+					<div><a href="/company/c_message.html">&nbsp;会社情報&nbsp;<br><span class="menumain_sub">Company</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="/company/c_message.html">社長メッセージ</a></li>
+						<li><a href="/company/c_outline.html">会社概要</a></li>
+						<li><a href="/company/c_management.html">経営理念</a></li>
+						<li><a href="/company/c_history.html">沿革</a></li>
+						<li><a href="/company/c_change.html">業績推移</a></li>
+						<li><a href="/company/c_com.html">社会活動への取り組み</a></li>
+						<li><a href="/company/c_chart.html">組織図</a></li>
+						<li><a href="/company/c_affiliated.html">関連会社一覧</a></li>
+						<li><a href="/company/c_office.html">事業所一覧</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/products/products.html">&nbsp;製品一覧&nbsp;<br><span class="menumain_sub">Product</span></a></div>
+					<ul class="level2 clearfix">
+						<!--<li><a href="/products/products.html">製品一覧</a></li>-->
+						<li><a href="/products/p_makasete.html">まかせて！シリーズ</a></li>
+						<li><a href="/products/p_star.html">スタースチールシリーズ</a></li>
+						<li><a href="/products/p_ai.html">愛ちゃんシリーズ</a></li>
+						<li><a href="/products/p_ec.html">ECシステム</a></li>
+						<li><a href="/products/p_qtop.html">給ちゃんシリーズ</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/service/service.html">サービス一覧<br><span class="menumain_sub">Service</span></a></div>
+					<ul class="level2 clearfix">
+						<!--
+						<li><a href="/service/service.html">サービス一覧</a></li>
+						<li><a href="/service/service.html#img_modal01">システム構築</a></li>
+						<li><a href="/service/service.html#img_modal02">メンテナンス</a></li>
+						<li><a href="/service/service.html#img_modal03">システム運用・受託</a></li>
+						<li><a href="/service/service.html#img_modal04">ITコンサル・教育</a></li>
+						<li><a href="/service/service.html#img_modal05">ハードウェア販売・賃貸</a></li>
+						<li><a href="/service/service.html#img_modal06">パッケージソフト</a></li>
+						-->
+						<!--<li><a href="/service/service.html">サービス一覧</a></li>-->
+						<li><a href="/service/service.html?id=svc01">システム構築</a></li>
+						<li><a href="/service/service.html?id=svc02">メンテナンス</a></li>
+						<li><a href="/service/service.html?id=svc03">システム運用・受託</a></li>
+						<li><a href="/service/service.html?id=svc04">ITコンサル・教育</a></li>
+						<li><a href="/service/service.html?id=svc05">ハードウェア</a></li>
+						<li><a href="/service/service.html?id=svc06">パッケージソフト</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/safe/safe_match.html">安心への取組み<br><span class="menumain_sub">Match to relief</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="/safe/safe_match.html">情報セキュリティ</a></li>
+						<li><a href="/safe/safe_disaster.html">災害対策</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/recruit/r_guide.html">採用情報<br><span class="menumain_sub">Recruit</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="/recruit/r_guide.html">募集要項</a></li>
+						<li><a href="/recruit/r_schedule.html">採用スケジュール</a></li>
+						<li><a href="/recruit/r_personal.html">求める人材像</a></li>
+						<li><a href="/recruit/r_newface.html">新入社員の声</a></li>
+						<li><a href="/recruit/r_informal.html">内定者の声</a></li>
+						<li><a href="/recruit/r_education.html">教育制度</a></li>
+						<li><a href="/recruit/r_info.html">説明会情報</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/contact.html">お問い合わせ<br><span class="menumain_sub">Contact</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="contact.html">お問い合わせ</a></li>
+						<!--
+						<li><a href="/policy/privacy.html">プライバシーポリシー</a></li>
+						<li><a href="/policy/policy.html">個人情報の取り扱い</a></li>
+						<li><a href="/policy/mynumber.html">マイナンバー利用目的</a></li>
+						-->
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+<script language="javascript">
+
+$(function(){
+	$('#settled').css('top', 0);
+	//Bodyの背景でParallax(視差)を表現
+	$(window).scroll(function(){
+		var loc = 0; /* loc = 121 */ 
+		var posy = $(this).scrollTop();
+		if( posy < loc ){
+			$('#settled').css('top',- posy);
+		} else {
+			$('#settled').css('top',- loc);
+		}
+	});
+});
+
+</script>
+
+
+<div id="container">
+	<div class="block1 clearfix">
+		<img src="images/top_img1.jpg"  width="585" height="128" alt="プロの視点で時代の変化を的確に捉えた技術をBEST IT! NEXT IT!でサポートいたします。"/>
+		<div class="block2 clearfix">
+			<div class="block2_ttl">TOPICS</div>
+			<script type="text/javascript" src="http://www.d-sit.co.jp/sithp/z_Shin.asp" charset="Shift-JIS"></script>
+		</div>
+	</div>
+
+	<div class="block3 clearfix">
+		<a href="/service/service.html">
+			<img src="images/top_img2.jpg"  width="422" height="422" usemap="#svc" alt="サービス一覧"/>
+		</a>
+<!--
+			<map name="svc">
+				<area href="area.htm" shape="poly" alt="" coords="175,7,245,7,280,68,245,130,175,130,140,68">
+			</map>
+-->
+	</div>
+</div><!--/#container-->
+<div id="footer">
+	<div class="clearfix ft_logo">
+		<img src="../images/ft_logo01.jpg" alt="" width="67" height="74">
+		<img src="../images/ft_logo02.jpg" alt="" width="61" height="74">
+		<img src="../images/ft_logo03.jpg" alt="" width="116" height="74">
+	</div>
+	<div class="clearfix ft_logo">
+		<div style="float:left; padding-left:15px;">対象範囲：技術部 ※詳細は<a href="safe/safe_match.html">安心への取組み</a>をご参照ください</div>
+	</div>
+	<br /><br />
+	<center>スターインフォテックは、特殊鋼の総合メーカー大同特殊鋼のグループ会社です。</center>
+	<center>Copyright © StarInfoTech ALL Rights Reserved.</center>
+</div>
+
+<!-- HIDE 2015.12.18 Nami -->
+<!--<div id="container">-->
+	<!--<div id="sub1">-->
+		<!--<img src="images/temp_topix.gif" class="" alt=""/>-->
+		<!--<span class="span_sub1">-->
+		<!--</span>-->
+	<!--</div>-->
+	<!--<div style="padding-top: 60px; font-size: 12px;">-->
+		<!--スターインフォテックは、特殊鋼の総合メーカー大同特殊鋼のグループ会社です。<br>-->
+	<!--</div>-->
+	<!--<div id="sub2">-->
+		<!--<img src="images/gaiyou.png" alt=""/>-->
+	<!--</div>-->
+
+	<!--<div>-->
+		<!--<a onClick="animatedScroll('#top','2000','linear','');" style="cursor: pointer;">TOPに戻る</a>-->
+		<!--<a href="#container" style="cursor: pointer;">TOPに戻る</a>-->
+	<!--</div>-->
+<!--
+	<div id="service" class="sub">
+		<img src="images/subtitle_service.gif" alt=""/>
+		<div style="width: 1000px; text-align: center; padding-top: 40px;">
+			<img src="images/concept_service.png" alt=""/>
+			<img src="images/cont_service01.png" alt=""/>
+			<img src="images/cont_service02.png" alt=""/>
+			<img src="images/cont_service03.png" alt=""/>
+			<img src="images/cont_service04.png" alt=""/>
+			<img src="images/cont_service05.png" alt=""/>
+			<img src="images/cont_service06.png" alt=""/>
+		</div>
+	</div>
+	<div>
+		<a onClick="animatedScroll('#top','3000','linear','');" style="cursor: pointer;">TOPに戻る</a>
+	</div>
+
+	<div id="product" class="sub">
+		<img src="images/subtitle_product.gif" alt=""/>
+		<div style="width: 1000px; text-align: center; padding-top: 40px;">
+			<img src="images/concept_product.png" alt=""/>
+			<img src="images/tabs_product.png" alt="" style="margin-top: 40px;" />
+		</div>
+	</div>
+	<div>
+		<a onClick="animatedScroll('#top','4000','linear','');" style="cursor: pointer;">TOPに戻る</a>
+	</div>
+-->
+	<!--<div id="sub3">
+		<img src="images/foot.png" alt=""/>
+	</div>-->
+<!--</div>-->
+<div id="alphabetlayer">
+	<canvas id="canvas"></canvas>
+</div>
+<script type="text/javascript">
+$(function(){
+var headerHight = 200; //ヘッダの高さ
+/*ページ内＃リンク*/
+        $('a[href^=#svc]').click(function(){
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'body' : href);
+                var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+                $("html, body").animate({scrollTop:position}, 550, "swing");
+                return false;
+        });
+ /*ページ外＃リンク*/      
+        var url = $(location).attr('href');
+                 // スムーズスクロールの処理
+                var url_sp = url.split("?id=");
+                var hash = '#' + url_sp[url_sp.length - 1];
+                var target2 = $(hash);
+                var position2 = target2.offset().top-headerHight;
+                $("html, body").animate({scrollTop:position2}, 550, "swing");
+});
+</script>
+</body>
+</html>

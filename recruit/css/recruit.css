@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* */
+.recruitSection{
+margin:0 0 90px 0px;
+}
+.recruitSection.bRed{
+border:solid 4px rgb(141,12,37);
+border-radius:10px;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+padding:25px;
+margin-bottom:50px;
+}
+.recruitSection .imgOnlyStyle{
+max-width:960px;
+}
+.recruitSection .imgOnlyStyle img{
+width:100%;
+}
+.recruitSection h2{
+font-size:28px;
+border-bottom:solid 2px #A21D32;
+color:#A21D32;
+text-align:center;
+line-height:1.7em;
+letter-spacing:0.2em;
+}
+.recruitSection h2 span{
+font-size:22px;
+}
+.recruitSection h2.infoH2{
+font-size:17px;
+color:#A21D32;
+text-align:center;
+margin-bottom:30px;
+border:none;
+}
+.recruitSection .subTtl{
+font-size:33px;
+text-align:center;
+line-height:1.0em;
+margin-bottom:30px;
+color:rgb(141,12,37);
+}
+.recruitSection p.text{
+font-size:15px;
+text-align:center;
+padding-bottom:30px;
+}
+.recruitSection p.text a{
+color:#8e0c25;
+text-decoration:none;
+}
+.recruitSection p.text a:hover{
+color:#8e0c25;
+text-decoration:underline;
+}
+.recruitSection ul li{
+margin-bottom:10px;
+}
+/* 三角形 */
+.triangle{
+margin:0 auto 70px;
+width:140px;
+height:40px;
+position:relative;
+}
+.triangle:after{
+border-top:50px solid #cacaca;
+border-left:50px solid transparent;
+border-right:50px solid transparent;
+content:"";
+position:absolute;
+bottom:-28px;
+left:50%;
+margin-left:-50px;
+}
+
+
+.educationSection{
+margin-bottom:20px;
+}
+.educationSection .subTtl,
+.educationSection p.text{
+text-align:left;
+}
+table.recruitTable{
+width:100%;
+}
+table.recruitTable tr > td:first-child{
+width:156px;
+vertical-align:top;
+}
+table.recruitTable tr th,td{
+padding:10px;
+vertical-align:top;
+border-bottom:1px dashed #333;
+}
+table.recruitTable tr .width10{
+width:10%;
+}
+table.recruitTable tr .width15{
+width:15%;
+}
+table.r_info_tbl tr > td:first-child{
+font-weight: bold;
+width: auto;
+vertical-align:top;
+}
+.recruitTable.recruitGuideTable,
+.recruitTable.recruitInfoTable{
+margin:0 auto 30px;
+}
+.section.recruitSection.bRed ul.listStyleCircle li:before{
+background-color:rgb(141,12,37);
+}
+
+.recnavBox{
+width:100%;
+background-color:rgba(141,12,37,1);
+}
+.recnavBoxInner{
+width:960px;
+margin:0 auto;
+position:relative;
+top:0;
+}
+
+.recnav{
+position:absolute;
+top:-200px;
+right:7px;
+width:auto;
+height: 32px;
+display:block;
+background-color:rgb(255,255,255);
+text-align:center;
+transition:all 0.3s ease;
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;	
+border: none;
+    border-radius:0px;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+}
+.recnavImg{
+width:140px;
+margin:0px auto;
+}
+.recnavImg img{
+width:100%;
+}
+.recnavText{
+font-weight:bold;
+color:#8e0c26;
+margin:0 auto;
+font-size:16px;
+}
+.recnav:hover{
+border-color:#8e0c26;
+cursor:pointer;
+}
+
+.additionalNotesStyle1{
+	margin:0 0 30px 20px;
+	font-size:15px;
+}
+.additionalNotesStyle1 dt{
+	width:4em;
+	float: left;
+	clear: left;
+}
+.additionalNotesStyle1 dd{
+	margin: -1.5em 0 3px 4em;
+	float: left;
+	clear: both;
+}
+.bdb0{
+	border-bottom:none;
+}
+@media screen and (max-width:959px){
+.recnavBoxInner{
+width:100%;
+}
+.recnav{
+top:-217px;
+right:0px;
+}
+#content{
+margin-left:20px;
+margin-right:20px;
+width:calc(100% - 40px);
+}
+}
+@media screen and (max-width:770px){
+.recruitSection p.text.sp{
+padding-bottom:60px;
+}
+.recruitSection .recruitTable.recruitInfoTable tr>th{
+padding-left:0;
+display:block;
+width:100%;
+border-bottom:none;
+padding-top:10px;
+padding-bottom:10px !important;
+}
+.recruitSection .recruitTable.recruitInfoTable tr>th+td,
+.recruitSection .recruitTable.recruitInfoTable tr>th+td+td,
+.recruitSection .recruitTable.recruitInfoTable tr>th+td+td+td{
+display:block;
+width:100%;
+padding-left:0;
+padding-right:0;
+padding-bottom:10px;
+}
+table.recruitTable tr .width10,
+table.recruitTable tr .width15,
+.recruitTable.recruitEducationTable th,
+.recruitTable.recruitEducationTable td,
+.recruitTable.recruitGuideTable th,
+.recruitTable.recruitGuideTable td{
+display:block;
+width:100%;
+border-bottom:none;
+}
+
+
+td.bNone{
+border:none;
+padding:0 !important;
+}
+td.mb15{
+margin-bottom:15px;
+padding-top:0 !important;
+border-bottom:dotted 1px #dadada;
+}
+.recruitSection table.recruitTable.spTbl .width15,th.bgRed{
+background-color:rgb(141,12,37);
+color:#fff;
+padding-left:10px !important;
+margin-top:15px;
+border:none;
+}
+.recruitSection table.recruitTable.spTbl .pl10{
+padding-left:10px !important;
+}
+.recruitSection table.recruitTable.spTbl .width10{
+font-weight:bold;
+padding-left:10px !important;
+border:none;
+}
+.recruitSection table.recruitTable.spTbl .width45{
+padding:0 0 0 10px !important;
+border:none;
+}
+.recruitSection table.recruitTable.spTbl th,td{
+border:none;
+}
+table.recruitTable tr > td:first-child{
+width:100%;
+}
+.recruitTable .hideSp{
+display:none;
+}
+table.r_info_tbl tr{
+display:block;
+padding:10px 0;
+border-bottom:dotted 1px #dadada;
+}
+table.r_info_tbl tr td{
+width:100%;
+display:block;
+width:100%;
+padding:0;
+}
+table.r_info_tbl tr > td:first-child{
+padding-bottom:10px;
+}
+.tablerinfo tr td{
+width:100%;
+display: table;
+}
+.tablerinfo tr td:first-child{
+font-weight: bold;
+    padding: 10px 0;
+}
+.tablerinfo tr td:last-child{
+margin-bottom: 20px;
+}
+.tablerinfo2{
+text-align: center;
+}
+}
+@media screen and (max-width:700px){
+#mainVisual .textOnlyStyle{
+height:265px;
+}
+#mainVisual .container{
+top:12%;
+}
+.recruitSection .subTtl{
+font-size:26px;
+text-align:center;
+font-weight:bold;
+line-height:1.2em;
+margin-bottom:30px;
+color:rgb(141,12,37);
+}
+.recruitSection p.text{
+padding-bottom:0px;
+}
+.triangle{
+margin:0 auto 50px;
+width:140px;
+height:25px;
+position:relative;
+}
+.triangle:after{
+border-top:35px solid #cacaca;
+border-left:35px solid transparent;
+border-right:35px solid transparent;
+content:"";
+position:absolute;
+bottom:-28px;
+left:50%;
+margin-left:-35px;
+}
+.recnavBox{
+background-color:#fff;
+}
+.recnav{
+position:static;
+margin:0 auto;
+width:95%;
+}
+.additionalNotesStyle1{
+	margin-bottom:0;
+}
+.tablerinfo tr td{
+width:100%;
+display: table;
+}
+.tablerinfo tr td:first-child{
+font-weight: bold;
+    padding: 10px 0;
+}
+.tablerinfo tr td:last-child{
+margin-bottom: 20px;
+}
+.tablerinfo2{
+text-align: center;
+}
+}
+@media screen and (min-width:770px){
+.tablerinfo tr td {
+width: inherit;
+display: table-cell;
+}
+.tablerinfo2{
+text-align: left;
+}
+}

@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* */
+.policySection {
+margin: 0 0 90px 0px;
+}
+.policySection .imgOnlyStyle {
+max-width: 960px;
+}
+.policySection .imgOnlyStyle img {
+width: 100%;
+}
+.policySection h2 {
+font-size: 28px;
+border-bottom: solid 2px #A21D32;
+color: #A21D32;
+text-align: center;
+line-height: 1.7em;
+letter-spacing: 0.2em;
+}
+.policySection h2 span {
+font-size: 22px;
+}
+.policySection h3 {
+font-size: 17px;
+color: #A21D32;
+text-align: center;
+margin-bottom: 30px;
+}
+.policySection .subTtl {
+font-size: 36px;
+text-align: center;
+line-height: 1.0em;
+margin-bottom: 30px;
+}
+.policySection p.text {
+font-size: 15px;
+text-align: left;
+padding-bottom: 30px;
+}
+.policySection ol {
+padding: 0 15px;
+}
+.policySection ol li {
+list-style: decimal;
+margin: 20px 10px;
+}
+.policySection .date {
+float: right;
+}
+.policySection .lowerLatinList li {
+list-style-type: lower-latin;
+}
+.policySection .lowerdecimalList {
+  padding: 0;
+  margin-left: 2em;
+}
+.policySection .lowerdecimalList li {
+  counter-increment: cnt;
+  list-style: none;
+  margin-left: 0;
+}
+.policySection .lowerdecimalList li::before {
+  content: "(" counter(cnt) ") ";
+  display: inline-block;
+  margin-left: -2em;
+  width: 2em;
+}
+.policySection .lowerRomanList li {
+    list-style-type: none;
+    list-style-position: inside;
+    counter-increment: recnt;
+}
+.policySection .lowerRomanList li::before {
+    display: marker;
+    content: "" counter(recnt) ") ";
+}
+.mynumberTbl {
+font-size: 15px;
+margin-bottom:15px;
+}
+.mynumberTbl .item {
+background-color: rgb(141,12,37);
+color: #fff;
+text-align: center;
+}
+.mynumberTbl .division {
+background-color: #c56d7b;
+color: #fff;
+text-align: center;
+}
+.mynumberTbl .classification {
+background-color: #e2abb3;
+color: #fff;
+text-align: center;
+}
+.mynumberTbl .subClassification01 {
+background-color: #fff0f2;
+color: #333;
+padding-left: 5px;
+}
+.mynumberTbl .subClassification02 {
+background-color: #fff;
+color: #333;
+padding-left: 5px;
+}
+.mynumberTbl .purpose {
+background-color: #f9f9f9;
+color: #333;
+padding-left: 5px;
+}
+.mynumberTbl td.td_btm{
+border-bottom: 1px solid #b36874;
+}
+.mynumberTbl td.td_rt{
+border-right: 1px solid #b36874;
+}
+.mynumberTbl td.td_lt{
+border-left: 1px solid #b36874;
+}
+.mynumberTbl .fnt_clr{
+color: #ffffff;
+}
+.mynumberTbl .ctr{
+text-align: center; 
+}
+.mynumberTbl td{
+padding: 8px 0 8px 0px;
+}
+.list01 {
+  list-style: decimal;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.list01 h2 {
+  border: none;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+.list01 p {
+  font-size: 15px;
+  font-weight: normal;
+}
+.list02 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2;
+    list-style-type: none;
+    list-style-position: inside;
+    counter-increment: cnt;
+}
+.list02::before {
+    display: marker;
+    content: "(" counter(cnt) ") ";
+}
+.contact {
+    margin-top: 20px;
+}
+@media screen and (max-width: 959px) {
+#content{
+	margin-left:20px;
+	margin-right:20px;
+	width:calc(100% - 40px);
+}
+}
+
+@media screen and (max-width: 599px) {
+
+}

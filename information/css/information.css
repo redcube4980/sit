@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/*news content*/
+
+
+.section.informationSection .newsContent .news:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.section.informationSection .newsContent .news{
+display:inline-table;
+min-height:1%;
+}
+* html .section.informationSection .newsContent .news{
+height:1%;
+}
+.section.informationSection .newsContent .news{
+display:block;
+}
+
+
+
+
+.section.informationSection{
+	margin-bottom:80px;
+}
+.section.informationSection .newsContent{
+	border-bottom:1px solid #000;
+	text-align:left;
+	margin-bottom:20px;
+}
+.section.informationSection .newsContent .news{
+	clear:both;
+	border-bottom:1px dashed #333;
+	padding:22px 0;
+}
+.section.informationSection .newsContent .news:last-child{
+border-bottom:none;
+}
+
+.section.informationSection .newsContent .news>div{
+	float:right;
+	text-align:left;
+	width:850px;
+}
+.section.informationSection .newsContent .news>div p{
+	margin-left:15px;
+	display:inline;
+}
+.section.informationSection .newsContent .news em{
+	float:left;
+}
+
+
+
+.newsRecruitDate{
+	color:rgba(41,45,128,0.7);
+}
+.newsCompanyDate{
+	color:rgba(141,12,37,0.7);
+}
+.newsNoticeDate{
+	color:rgba(0,102,152,0.7);
+}
+.newsRecruit{
+	background-color:rgba(41,45,128,0.7);
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	padding:3px 6px;
+	color:rgb(255,255,255);
+}
+
+.newsCompany{
+	background-color:rgba(141,12,37,0.7);
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	padding:3px 6px;
+	color:rgb(255,255,255);
+}
+
+.newsNotice{
+	background-color:rgba(0,102,152,0.7);
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	padding:3px 6px;
+	color:rgb(255,255,255);
+}
+
+.news>div a{
+color:#333;
+text-decoration:none;
+}
+.section.informationSection .news>div a:hover{
+color:rgb(141,12,37);
+text-decoration:underline;
+}
+
+
+
+
+@media screen and (max-width: 959px) {
+.section.informationSection{
+	width:calc(100% - 40px);
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.section.informationSection .news dl:first-child{
+	border-bottom:1px dashed #333;
+}
+.section.informationSection .news dl:last-child{
+	border-bottom:none;
+}
+.section.informationSection .news dl dt{
+	float:none;
+	display:block;
+	padding-bottom:5px;
+	width:240px;
+}
+.section.informationSection .news dl dd{
+	float:none;
+	display:block;
+	padding-top:5px;
+}
+.section.informationSection .news dl dd{
+	width:100%;
+}
+.section.informationSection .news dl dd ul,
+.section.informationSection .news dl dd li,
+.section.informationSection .news dl dd li a{
+	float:none;
+	width:100%;
+}
+
+.section.informationSection .newsContent .news{
+	padding: 30px 0 10px;
+	position: relative;
+	line-height:1.5em;
+}
+.section.informationSection .newsContent .news em{
+	position: absolute;
+	top: 5px;
+}
+.section.informationSection .newsContent .news>div{
+	float:none;
+	width:100%;
+}
+.section.informationSection .newsContent .news>div p{
+	display: block;
+	margin:5px 0 0;
+}
+}

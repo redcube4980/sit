@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Slidebars Basic Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+    <!-- Slidebars CSS -->
+    <link rel="stylesheet" href="/css/slidebars.css">
+  </head>
+ 
+  <body>
+    <div id="sb-site">
+      <!-- メインのコンテンツ -->
+    </div>
+ 
+    <div class="sb-slidebar sb-left">
+      <!-- サイドのコンテンツ（左） -->
+    </div>
+ 
+    <div class="sb-slidebar sb-right">
+      <!-- サイドのコンテンツ（右） -->
+    </div>
+ 
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ 
+    <!-- Slidebars -->
+    <script src="/js/slidebars.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+
+ (function($) {
+    $(document).ready(function() {
+      var mySlidebars = new $.slidebars();
+      $('.my-button').on('click', function() {
+        mySlidebars.open('left');
+      });
+      $('.my-other-button').on('click', function() {
+        mySlidebars.toggle('right');
+      });
+      $('.my-third-button').click(mySlidebars.close);
+    });
+  }) (jQuery);
+	  
+    </script>
+  </body>
+</html>

@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>StarInfoTech Co.,Ltd</title>
+
+	
+<meta name="viewport" content="width=1000, user-scalable=yes">
+<meta name="keywords" content="スターインフォテック,SIT,大同特殊鋼,特殊鋼,情報システム,大同グループ,システム構築,システム開発,まかせて！勤務表,
+まかせて！「卸」鋼太郎,卸,二次加工,熱処理,スタースチール,愛ちゃんシリーズ,給ちゃんシリーズ">
+<meta name="description" content="株式会社スターインフォテックは大同特殊鋼株式会社のグループ企業です。特殊鋼業界で40年 スキルとノウハウで、 鋼材流通・加工業のニーズに100％お応えいたします。 社会より価値を認められ評価されるカンパニーを目指し、「お客様とともに」「技術を高め」「人を活かす」を柱としています。">
+
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+<script src="../jquery/jquery.min.js" type="text/javascript"></script>
+<script src="../jquery/jquery-ui.min.js" type="text/javascript"></script>
+
+<!--<script src="../js/matrix.js" type="text/javascript"></script>-->
+
+
+<link rel="stylesheet" type="text/css" href="../jquery/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../jquery/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="../jquery/jquery-ui.theme.min.css">
+
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.min.css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+<script src="/js/scroll.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/tabs.js"></script><!--tab nav-->
+<script type="text/javascript">
+var attab = new ATTabChangeForImage();
+attab.load({
+	tabID : 'tabs'
+});
+
+$(function(){
+	$('#top').click(function(){
+		$($.browser.webkit ? 'body' : 'html').animate(
+			{
+				scrollTop: $('#container').offset().top - 360
+			},
+			'fast',
+			'linear',
+			function(){
+				location.href = '../';
+			}
+		);
+	});
+});
+</script>
+
+<script type="text/javascript" src="/js/inquiry.js"></script><!--問い合わせAJAX-->
+
+</head>
+
+<body>
+<div id="settled" class="clearfix hidden-xs">
+	<div id="top" class="clearfix">
+		<div id="top_logo">
+			<a href="/"><img src="../images/header_ttl.png" class="img" alt="スターインフォテック トップページヘ"></a>
+		</div>
+		<div id="top_copy"></div>
+	</div>
+
+	<div id="menusub" class="clearfix">
+		<ul>
+			<li><a href="/news.html">新着情報</a></li>
+			<li><a href="/policy/privacy.html">プライバシーポリシー</a></li>
+			<li><a href="/sitemap.html">サイトマップ</a></li>
+		</ul>
+	</div>
+
+	<div id="menumain_band">
+		<div id="menumain">
+			<ul class="level1 clearfix">
+				<li>
+					<div><a href="../">ホーム<br><span class="menumain_sub">Home</span></a></div>
+				</li>
+				<li>
+					<div><a href="/company/c_message.html">&nbsp;会社情報&nbsp;<br><span class="menumain_sub">Company</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="/company/c_message.html">社長メッセージ</a></li>
+						<li><a href="/company/c_outline.html">会社概要</a></li>
+						<li><a href="/company/c_management.html">経営理念</a></li>
+						<li><a href="/company/c_history.html">沿革</a></li>
+						<li><a href="/company/c_change.html">業績推移</a></li>
+						<li><a href="/company/c_com.html">社会活動への取り組み</a></li>
+						<li><a href="/company/c_chart.html">組織図</a></li>
+						<li><a href="/company/c_affiliated.html">関連会社一覧</a></li>
+						<li><a href="/company/c_office.html">事業所一覧</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/products/products.html">&nbsp;製品一覧&nbsp;<br><span class="menumain_sub">Products</span></a></div>
+					<ul class="level2 clearfix">
+						<!--<li><a href="/products/products.html">製品一覧</a></li>-->
+						<li><a href="/products/p_makasete.html">まかせて！シリーズ</a></li>
+						<li><a href="/products/p_star.html">スタースチールシリーズ</a></li>
+						<li><a href="/products/p_ai.html">愛ちゃんシリーズ</a></li>
+						<li><a href="/products/p_ec.html">ECシステム</a></li>
+						<li><a href="/products/p_qtop.html">給ちゃんシリーズ</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/service/service.html">サービス一覧<br><span class="menumain_sub">Service</span></a></div>
+					<ul class="level2 clearfix">
+						<!--
+						<li><a href="/service/service.html">サービス一覧</a></li>
+						<li><a href="/service/service.html#img_modal01">システム構築</a></li>
+						<li><a href="/service/service.html#img_modal02">メンテナンス</a></li>
+						<li><a href="/service/service.html#img_modal03">システム運用・受託</a></li>
+						<li><a href="/service/service.html#img_modal04">ITコンサル・教育</a></li>
+						<li><a href="/service/service.html#img_modal05">ハードウェア販売・賃貸</a></li>
+						<li><a href="/service/service.html#img_modal06">パッケージソフト</a></li>
+						-->
+						<!--<li><a href="/service/service.html">サービス一覧</a></li>-->
+						<li><a href="/service/service.html?id=svc01">システム構築</a></li>
+						<li><a href="/service/service.html?id=svc02">メンテナンス</a></li>
+						<li><a href="/service/service.html?id=svc03">システム運用・受託</a></li>
+						<li><a href="/service/service.html?id=svc04">ITコンサル・教育</a></li>
+						<li><a href="/service/service.html?id=svc05">ハードウェア</a></li>
+						<li><a href="/service/service.html?id=svc06">パッケージソフト</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/safe/safe_match.html">安心への取組み<br><span class="menumain_sub">Match to Safety</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="/safe/safe_match.html">情報セキュリティ</a></li>
+						<li><a href="/safe/safe_disaster.html">災害対策</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/recruit/r_guide.html">採用情報<br><span class="menumain_sub">Recruit</span></a></div>
+					<ul class="level2 clearfix">
+						<li><a href="/recruit/r_guide.html">募集要項</a></li>
+						<li><a href="/recruit/r_schedule.html">採用スケジュール</a></li>
+						<li><a href="/recruit/r_personal.html">求める人材像</a></li>
+						<li><a href="/recruit/r_newface.html">新入社員の声</a></li>
+						<li><a href="/recruit/r_informal.html">内定者の声</a></li>
+						<li><a href="/recruit/r_education.html">教育制度</a></li>
+						<li><a href="/recruit/r_info.html">説明会情報</a></li>
+					</ul>
+				</li>
+				<li>
+					<div><a href="/contact.html">お問い合わせ<br><span class="menumain_sub">Contact</span></a></div>
+					<ul class="level2 clearfix">
+						<!--
+						<li><a href="/contact.html">お問い合わせ</a></li>
+						<li><a href="/policy/privacy.html">プライバシーポリシー</a></li>
+						<li><a href="/policy/policy.html">個人情報の取り扱い</a></li>
+						<li><a href="/policy/mynumber.html">マイナンバー利用目的</a></li>
+						-->
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<script language="javascript">
+
+/*
+$(function(){
+	$('#settled').css('top', 0);
+	//Bodyの背景でParallax(視差)を表現
+	$(window).scroll(function(){
+		var loc = 0; // loc = 121 
+		var posy = $(this).scrollTop();
+		if( posy < loc ){
+			$('#settled').css('top',- posy);
+		} else {
+			$('#settled').css('top',- loc);
+		}
+	});
+});
+*/
+
+</script>
+
+<div id="container">
+		<div id="header" class="clearfix"></div>
+
+
+
+		<div id="content">
+			<h2>
+				<img src="../images/product.png" alt="製品一覧" width="820" height="45" />
+			</h2>
+			<div id="nav" >
+				<ul class="nav_products clearfix">
+				  <li class="b_left"><a href="/products/products.html">製品一覧</a></li><!--
+				  --><li class="b_left"><a href="/products/p_makasete.html">まかせて！シリーズ</a></li><!--
+				  --><li class="b_left"><a href="/products/p_star.html">スタースチールシリーズ</a></li><!--
+				  --><li class="b_left"><a href="/products/p_ai.html" class="active">愛ちゃんシリーズ</a></li><!--
+				  --><li class="b_left"><a href="/products/p_ec.html">ECシステム</a></li><!--
+				  --><li class="b_left b_right"><a href="/products/p_qtop.html">給ちゃんシリーズ</a></li>
+				</ul>
+			</div>
+
+			<div class="ct_box">
+
+				<div class="ct_box_top">
+					<img src="../images/p_ai_sien_ttl.png" alt="自立支援請求システムPlus" width="812" height="75" />
+				</div>
+				<div class="ct_box_cntr2">
+					<div id="tab_makasete">
+						<ul id="tabs">
+							<li><a href="#tab1"><img src="/images/p_ai_tab_01s_in.png" alt="特長" width="116" height="32" /></a></li><!--
+							--><li><a href="#tab2"><img src="/images/p_ai_tab_02s_off.png" alt="対応サービス一覧" width="116" height="32" /></a></li><!--
+							--><li><a href="#tab3"><img src="/images/p_ai_tab_03s_off.png" alt="ご購入までの流れ" width="116" height="32" /></a></li><!--
+							--><li><a href="#tab4"><img src="/images/p_ai_tab_04s_off.png" alt="オプションサービス" width="116" height="32" /></a></li><!--
+							--><li><a href="#tab5"><img src="/images/p_ai_tab_05s_off.png" alt="稼働環境" width="116" height="32" /></a></li>
+						</ul>
+						<div id="tab1" class="tab_star_green clearfix">
+							<h3>サービス実績を入力するだけで、請求金額を自動計算します。</h3>
+							<ul>
+								<li>自立支援法に基づく請求業務を効率的に行えます。</li>
+								<li>請求業務に特化した、シンプルで使いやすいシステムです。</li>
+								<li>パソコン1台からすぐにご使用になれます。</li>
+								<li>国保連用電子データ作成機能も対応しています。</li>
+							</ul>
+							<hr>
+							
+							<div class="sub_list">
+								<img src="/images/p_ai_08.jpg" alt="販売価格" width="24" height="24" />
+								<span class="sub_ttl">販売価格</span>
+							</div>
+							<img src="/images/p_ai_sien_01.jpg" alt="期間限定特別販売" width="715" height="64" />
+							<small>※諸経費、教育費用、環境設定費用は含まれません。</small>
+							<hr>
+
+							<div class="sub_list">
+								<img src="/images/p_ai_11.jpg" alt="お客様の声" width="24" height="24" />
+								<span class="sub_ttl">お客様の声</span>
+							</div>
+							<div class="bun1"><b>愛知県　豊橋市福祉事業会　豊橋ちぎり寮　寮長様</b></div>
+							<p class="sub_ttl_koe">多々あるソフトの中で、愛ちゃんFamiliarシリーズを導入した理由は「操作の判りやすさ」「電話の対応」です。とにかく、操作が簡単で、お試し期間中に、PCが苦手な職員でも直ぐに使い方をマスターできました。 <br />
+							また、昨年10月の自立支援法施行後の過渡期に於いても、電話で質問すると、非常に丁寧に指導して頂けました。 長く使用するソフトですので、「誰にでも使える事」「困った時に頼れる事」が大事だと感じています。 業務記録システムについても、試行期間中に職員全員が使いこなせた事が導入の決定打でした。<br />
+							当施設が、業務記録をシステム化する事を決断した理由は、「利用者を守る」為でした。 当時、業務記録はノートに記録しておりましたが、「業務記録をノートで管理していて、一刻を争う時、はたして救急救命士・医者へ、利用者を助ける為に必要な情報を、正確迅速に伝える事ができるか？」と考えるようになりました。これは、緊急時に於いては利用者の命に関わる問題と考え、解決策として愛ちゃんFamiliarシリーズを導入しました。<br />現在、利用者の異変で救急車を要請した場合、救急車が到着する迄に、この利用者の履歴、通院・投薬記録、最近の生活記録を検索・印刷し、到着次第、そのまま救急救命士へ手渡す事が出来ます。また、保護者から、施設での状況を聞かれたときも、数分で、記録を手渡す事が出来ます。これらのスピーディな対応により、利用者を守る事ができ、保護者や外部関係者から大きな信頼を頂けていると考えており、愛ちゃんFamiliarシリーズは、当施設になくてはならないソフトとなっています。</p>
+						</div>
+						<div id="tab2" class="tab_star_green clearfix">
+							<h3>システムで対応しているサービス一覧</h3>
+							<table class="makasete_table mb10 fl w360">
+								<tr>
+									<th class="tbl_subj td_bottom" colspan="2">介護給付</th>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom" width="130">短期入所</td>
+									<td class="td_right td_bottom" width="130">施設入所支援</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">療養介護</td>
+									<td class="td_right td_bottom">旧法施設支援</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">生活介護</td>
+									<td class="td_right td_bottom">日中一次支援（オプション）</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom" colspan="2">障害児施設向け請求機能</td>
+								</tr>
+							</table>
+
+							<table class="makasete_table mb10 fr w360">
+								<tr>
+									<th class="tbl_subj td_bottom" colspan="2">訓練給付</th>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom" width="130">自立訓練（機能訓練）</td>
+									<td class="td_right td_bottom" width="130">就労継続支援（Ａ型）</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">自立訓練（生活訓練）</td>
+									<td class="td_right td_bottom">就労継続支援（Ｂ型）</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">就労移行支援</td>
+									<td class="td_right td_bottom">共同生活支援</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom" colspan="2">就労移行支援（養成施設）</td>
+								</tr>
+							</table>
+
+							<table class="makasete_table mb10 fl w360">
+								<tr>
+									<th class="tbl_subj td_bottom" colspan="2">地域相談給付</th>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom" width="130">計画相談支援</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">地域移行支援</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">地域定着支援</td>
+								</tr>
+							</table>
+							<div class="clearfix"></div>
+							<small>※自立支援請求業務の全ての機能を保証するものではありません。</small>
+						</div>
+						<div id="tab3" class="tab_star_green clearfix">
+
+							<div class="clearfix">
+								<div class="c_com_bg01">
+									<div class="com_bun01">
+										試用版CDから、ソフトをインストールします。<br />試用版CDの<a href="../contact.html">お申し込みはこちら</a>
+									</div>
+								</div>
+								<div class="c_com_bg02">
+									<div class="com_bun02">
+										実際にお使い頂き、ご評価ください。（試用期限60日）
+									</div>
+								</div>
+								<div class="c_com_bg03">
+									<div class="com_bun02">
+										継続してお使い頂く場合には、ご購入をお願いいたします。弊社までご連絡ください。
+									</div>							
+								</div>
+							</div>
+						</div>
+
+						<div id="tab4" class="tab_star_green clearfix">
+							<div class="sub_list">
+								<img src="/images/p_ai_09.jpg" alt="オプションサービス" width="24" height="24" />
+								<span class="sub_ttl2">オプションサービス</span>
+							</div>
+							<div class="bun1">
+							・ソフトの導入をスムーズに行なえるように、オプションを用意しております。<br />・日中一時支援機能については、市町村毎に内容が異なる為、オプションとして個別調整とさせて頂きます。<br /><br />
+							</div>
+							<table class="makasete_table" style="width:730px;">
+								<tr>
+									<th class="tbl_subj2 td_right td_bottom">オプションサービス名</th>
+									<th class="tbl_subj2 td_right td_bottom">内容</th>
+									<th class="tbl_subj2 td_right td_bottom">価格（税抜）</th>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">日中一時支援</td>
+									<td class="td_right td_bottom">日中一時支援機能を追加いたします。</td>
+									<td class="td_right td_bottom">300,000円～</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">訪問教育（4h）</td>
+										<td class="td_right td_bottom">ご訪問し、環境設定・操作方法を説明いたします。</td>
+									<td class="td_right td_bottom">40,000円＋交通費</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">PCバンドル</td>
+										<td class="td_right td_bottom">新品ノートPCにインストールした状態でご提供します。</td>
+									<td class="td_right td_bottom">40,000円＋PC代金</td>
+								</tr>				
+							</table>
+							<hr>
+							
+							<div class="sub_list_bk1">
+								<div class="sub_list">
+									<img src="/images/p_ai_09.jpg" alt="オプションサービス" width="24" height="24" />
+									<span class="sub_ttl2">愛ちゃんFamiliarシリーズ業務支援オプションサービス</span>
+								</div>
+								<ul class="sub_list_ulli">
+									<li>愛ちゃんFamiliarシリーズは、利用者情報を共有しています。</li>
+									<li>業務日誌機能で、日々の業務記録を管理していれば、短期入所サービス等でサービスの内容を保護者から質問された場合や、ケース会議の資料準備などで、業務記録を有効に活用できます。</li>
+								</ul>
+							</div>
+							<table class="makasete_table" style="width:730px;">
+								<tr>
+									<th class="tbl_subj2 td_right td_bottom">業務支援オプション名</th>
+									<th class="tbl_subj2 td_right td_bottom">内容</th>
+									<th class="tbl_subj2 td_right td_bottom">価格（税抜）</th>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">業務日誌</td>
+									<td class="td_right td_bottom">日々の業務記録を登録し、様々な条件で検索できます。<br />利用者情報について、管理する項目を自由に追加できますので、<br />施設独自の項目で利用者を管理できます。</td>
+									<td class="td_right td_bottom">100,000円～</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">アセスメント</td>
+										<td class="td_right td_bottom">アセスメントを管理できます。（雛型も自由に設定可能）</td>
+									<td class="td_right td_bottom">180,000円</td>
+								</tr>
+								<tr>
+									<td class="td_right td_bottom">支援計画</td>
+										<td class="td_right td_bottom">支援計画を作成できます。</td>
+									<td class="td_right td_bottom">180,000円</td>
+								</tr>				
+								<tr>
+									<td class="td_right td_bottom">実績評価</td>
+										<td class="td_right td_bottom">月間の計画・実績評価を管理できます。</td>
+									<td class="td_right td_bottom">180,000円</td>
+								</tr>				
+								<tr>
+									<td class="td_right td_bottom">訪問教育</td>
+										<td class="td_right td_bottom">ご訪問し、インストール・操作方法を説明いたします。</td>
+									<td class="td_right td_bottom">40,000円＋交通費</td>
+								</tr>				
+							</table>
+						</div>
+
+						<div id="tab5" class="tab_star_green clearfix">
+							<div class="sub_list">
+								<img src="/images/p_ai_12.jpg" alt="動作環境" width="24" height="24" />
+								<span class="sub_ttl">稼働環境</span>
+							</div>
+							<table class="makasete_table" style="width:730px;">
+								<tr>
+									<th class="td_right td_bottom">OS</th>
+									<td class="td_right td_bottom">日本語版 Windows XP / 7</td>
+								</tr>
+								<tr>
+									<th class="td_right td_bottom">HDD領域</th>
+									<td class="td_right td_bottom">インストール用として30MB以上の空き容量が必要</td>
+								</tr>
+								<tr>
+									<th class="td_right td_bottom">画面解像度</th>
+									<td class="td_right td_bottom">1024×768（XGA）以上</td>
+								</tr>				
+							</table>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div><!--/content-->
+
+		<div id="footer">
+<!--
+			<div class="clearfix ft_logo">
+				<img src="../images/ft_logo01.jpg" alt="" width="67" height="74" />
+				<img src="../images/ft_logo02.jpg" alt="" width="61" height="74" />
+				<img src="../images/ft_logo03.jpg" alt="" width="116" height="74" />
+			</div>
+			<div class="clearfix ft_logo">
+				<div style="float:left;">対象範囲：技術部 ※詳細は<a href="../safe/safe_match.html">安心への取組み</a>をご参照ください</div>
+			</div>
+-->
+			Copyright &copy; StarInfoTech ALL Rights Reserved.
+		</div>
+
+		<div id="alphabetlayer2">
+			<canvas id="canvas"></canvas>
+		</div>
+
+	</div><!--/container-->
+
+
+<script src="../js/page_scroll.old.js" type="text/javascript"></script>
+<script src="../js/lightbox.js" type="text/javascript"></script>
+<p id="page-top"><a href="#wrap"><img src="../images/arrw.png"><br>PAGE TOP</a></p>
+</body>
+</html>

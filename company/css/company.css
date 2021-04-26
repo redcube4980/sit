@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* */
+.companySection h2 {
+font-size: 28px;
+border-bottom: solid 2px #A21D32;
+color: #A21D32;
+text-align: center;
+line-height: 1.7em;
+letter-spacing: 0.2em;
+}
+.companySection h2 span {
+font-size: 22px;
+}
+.companySection h3 {
+font-size: 17px;
+color: #A21D32;
+text-align: center;
+margin-bottom: 30px;
+}
+.companySection .subTtl {
+font-size: 36px;
+font-weight: nomal;
+line-height: 1.0em;
+margin-bottom: 20px;
+}
+.companySection p.text {
+    font-size: 15px;
+    padding-bottom: 30px;
+    width: 660px;
+    text-align: justify;
+}
+.companySection table td,th {
+padding: 5px 15px;
+vertical-align: top;
+border-bottom: 1px dashed #333;
+}
+.companySection table .bNone {
+border: none;
+}
+.pl30 {
+padding-left: 30px;
+}
+
+.c_map {
+background-color: rgb(141,12,37);
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border: solid 1px rgb(141,12,37);
+padding: 2px 5px;
+color: #fff;
+text-decoration: none;
+}
+.c_map:hover {
+opacity: 0.75;
+-moz-opacity: 0.75;
+filter: alpha(opacity=75);
+cursor: pointer;
+}
+/*message content*/
+p.messageHead{
+color:rgb(141,12,37);
+font-size:18px;
+font-weight: bold;
+margin-bottom:0.5em;
+}
+/*management content*/
+.companySection .circleNum{
+background-color:rgb(141,12,37);
+border: solid 2px #FFF;
+width: 70px;
+height: 70px;
+float:left;
+-moz-border-radius: 60px;
+-webkit-border-radius: 60px;
+border-radius: 60px;
+box-shadow: 0 0 0 3px rgb(141,12,37);
+-webkit-box-shadow: 0 0 0 3px rgb(141,12,37);
+-moz-box-shadow: 0 0 0 3px rgb(141,12,37);
+}
+.companySection .circleNum p{
+font-size: 43px;
+color: #FFF;
+font-family:serif;
+text-align: center;
+font-weight: bold;
+}
+.companySection .c_managementBox .subTtl{
+color:rgb(141,12,37);
+font-size: 28px;
+line-height: 2.5em;
+margin-left:90px;
+letter-spacing: 0.2em;
+border-bottom:rgb(141,12,37) 2px dotted;
+}
+/*office content*/
+.companySection .officeTable{
+margin-bottom:80px;
+width:100%;
+}
+.companySection .officeTable th,
+.companySection .officeTable td{
+padding-top:15px;
+padding-bottom:15px;
+}
+/*outline content*/
+.companySection .outlineTable{
+margin-bottom:80px;
+width:100%;
+}
+.companySection .outlineTable th,
+.companySection .outlineTable td{
+padding-top:15px;
+padding-bottom:15px;
+}
+/*change content*/
+.companySection .changeTable{
+margin: 0 auto;
+}
+.companySection .changeTable td{
+text-align:right;
+}
+.companySection .changeTable caption{
+text-align:right;
+border-bottom:1px dashed #333;
+}
+/*affiliated content*/
+.section.affiliatedSection{
+margin-bottom:80px;
+}
+
+.affiliatedColumn{
+float:left;
+width:465px;
+margin-left:30px;
+}
+.affiliatedColumn:first-child{
+margin-left:0;
+}
+.affiliatedColumnSet ul,
+.affiliatedColumn ul{
+margin:0 0 30px 10px;
+}
+.affiliatedColumnSet ul li a,
+.affiliatedColumn ul li a{
+color:#8e0c26;
+text-decoration:none;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+position:relative;
+padding-left:10px;
+}
+.affiliatedColumnSet ul li a:hover,
+.affiliatedColumn ul li a:hover{
+color:#8e0c26;
+text-decoration:underline;
+}
+.affiliatedColumn ul li.noLink{
+position:relative;
+padding-left:10px;
+}
+.affiliatedColumn ul li.noLink:hover{
+color:#333;
+text-decoration:none;
+cursor: text;
+}
+.affiliatedColumn ul .noLink:before{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 4.5px 0 4.5px 6px;
+border-color: transparent transparent transparent #8e0c26;
+content:"";
+position: absolute;
+left:0;
+top:7px;
+}
+.affiliatedColumnSet ul li a:before,
+.affiliatedColumn ul li a:before{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 4.5px 0 4.5px 6px;
+border-color: transparent transparent transparent #8e0c26;
+content:"";
+position: absolute;
+left:0;
+top:5px;
+transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+}
+.affiliatedColumnSet ul li a:hover:before,
+.affiliatedColumn ul li a:hover:before{
+left:3px;
+}
+.companySection .subTtl {
+font-size: 18px;
+font-weight: bold;
+line-height: 1.0em;
+margin-bottom: 20px;
+}
+.showSp,
+.showSp2{
+display:none;
+}
+.hideSp{
+display:inline;
+}
+
+table.outlineTable.historyTable th{
+font-weight:normal;
+}
+h4 {
+	font-size: 16px;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-top: 0;
+}
+.imgOnlyStyle{
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 959px) {
+#content{
+margin-left:20px;
+margin-right:20px;
+width:calc(100% - 40px);
+}
+p.messageHead{
+margin-bottom:1em;
+}
+.affiliatedColumn{
+width:48%;
+margin-left:0;
+}
+.affiliatedColumn:last-child{
+margin-left:4%;
+}
+.c_managementBox{
+width:705px;
+margin:0 auto;
+}
+.showSp{
+display:block;
+}
+
+.companySection table.officeTable th{
+display:block;
+width:100%;
+margin-top:20px;
+padding-left:0;
+border-bottom:none;
+}
+.companySection table.officeTable tr{
+clear:both;
+position:relative;
+display:block;
+}
+.companySection table.officeTable tr td{
+width:100%;
+display:block;
+padding-left:0;
+padding-bottom:20px;
+}
+.companySection table.officeTable tr td:last-child{
+width:auto;
+position:absolute;
+top:0;
+right:0;
+border-bottom:none;
+padding-left:0;
+padding-bottom:0;
+}
+.companySection table.outlineTable th{
+padding-left:0;
+display:block;
+width:100%;
+border-bottom:none;
+padding-top:10px;
+padding-bottom:0;
+}
+.companySection table.outlineTable td{
+display:block;
+width:100%;
+padding:0 0 10px 0;
+}
+table.outlineTable.historyTable th{
+font-weight:bold;
+color:#8e0c26;
+}
+.companySection h2,
+.companySection h3{
+line-height:1.6em;
+}
+.affiliatedColumn li{
+line-height:1.6em;
+}
+}
+@media screen and (max-width: 768px) {
+.c_changeImg,
+.c_chartImg{
+width:100%;
+}
+.c_changeImg img,
+.c_chartImg img{
+width:100%;
+height:auto;
+}
+.c_managementBox{
+width:100%;
+}
+}
+@media screen and (max-width: 599px) {
+.rightAdjust{
+float:none;
+margin:0;
+}
+.affiliatedColumn{
+float:none;
+margin-left:0;
+width:100%;
+}
+.affiliatedColumn:last-child{
+margin-left:0;
+}
+.affiliatedColumn ul{
+margin-bottom:0;
+}
+.affiliatedColumn:last-child ul{
+margin-bottom:30px;
+}
+.companySection .circleNum{
+width: 50px;
+height: 50px;
+}
+.companySection .circleNum p{
+font-size: 30px;
+line-height:50px;
+}
+.companySection .c_managementBox .subTtl{
+line-height:1.5em;
+margin-left:65px;
+}
+}
+@media screen and (max-width: 429px) {
+.companySection .c_managementBox .subTtl{
+letter-spacing:normal;
+}
+.hideSp{
+display:none;
+}
+.showSp2{
+display:block;
+}
+}
+#graph{
+width: 100%;        
+}
