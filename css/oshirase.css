@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+#section01 {
+  text-align: center;
+  position: relative;
+  height: 250px;
+}
+.innner {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    width: 665px;
+    transform: translate(-50%,0);
+    background-color: rgb(141,12,37);
+    color: #fff;
+    padding: 30px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+}
+a {
+	color: #fff;
+}
+dl {
+  margin: 50px 0 0;
+}
+dt {
+  float: left;
+}
+dd {
+  margin-left: 35%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+dd:last-child {
+  margin-bottom: 0;
+}
+.sp-br {
+	display: none;
+}
+@media screen and (max-width:959px){
+#section01 {
+    margin: 0 15px;
+    width: auto;
+}
+.innner {
+    width: 100%;
+}
+}
+@media screen and (max-width:700px){
+	#section01 {
+    margin: 0 15px;
+}
+#header #siteId {
+    margin: 36px auto 27px;
+}
+.innner {
+	top: 25%;	
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+}
+dl {
+    margin: 30px 0 0;
+}
+}
+@media screen and (max-width:560px){
+.innner {
+    padding: 18px;
+}
+.br {
+	display: none;
+}
+h2 {
+    font-size: 18px;
+}
+dt {
+    float: none;
+    text-align: left;
+	font-size: 16px;
+}
+dd {
+    text-align: left;
+    margin-left: 20px;
+	font-size: 16px;
+}
+.sp-br {
+	display: block;
+}
+span {
+    font-size: 13px;
+}
+}
+@media screen and (max-width:500px){}
