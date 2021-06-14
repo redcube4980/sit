@@ -79,52 +79,52 @@ $type        = $cgi{'type'};
 
 $title[1] = '問合せ（愛ちゃんFamiliar）';
 $temai[1] = 's-ohhara@te.d-sit.co.jp, k-nomura@sy.d-sit.co.jp';
-$tcmai[1] = 'koho@sw.d-sit.co.jp';
+$tcmai[1] = 'koho@daido-its.co.jp';
 
 $title[2] = '問合せ（大同ネット）';
 $temai[2] = 't-kozawa@xa.d-sit.co.jp';
-$tcmai[2] = 'koho@sw.d-sit.co.jp';
+$tcmai[2] = 'koho@daido-its.co.jp';
 
 #3のみ、Ccなし(Toと同じアドレスを指定する)
 $title[3] = '問合せ（本社）';
-$temai[3] = 'koho@sw.d-sit.co.jp';
-$tcmai[3] = 'koho@sw.d-sit.co.jp';
+$temai[3] = 'koho@daido-its.co.jp';
+$tcmai[3] = 'koho@daido-its.co.jp';
 
 $title[4] = '問合せ（まかせて！データ分析）';
 $temai[4] = 'y-takada@bw.d-sit.co.jp, t-kurihara@ac.d-sit.co.jp';
-$tcmai[4] = 'koho@sw.d-sit.co.jp';
+$tcmai[4] = 'koho@daido-its.co.jp';
 
 $title[6] = '問合せ（スタースチール熱処理）';
 $temai[6] = 'y-takada@bw.d-sit.co.jp, t-kurihara@ac.d-sit.co.jp';
-$tcmai[6] = 'koho@sw.d-sit.co.jp';
+$tcmai[6] = 'koho@daido-its.co.jp';
 
 $title[7] = '問合せ（スタースチール二次加工）';
 $temai[7] = 'y-takada@bw.d-sit.co.jp, t-kurihara@ac.d-sit.co.jp';
-$tcmai[7] = 'koho@sw.d-sit.co.jp';
+$tcmai[7] = 'koho@daido-its.co.jp';
 
 $title[8] = '問合せ（給ちゃんシリーズ）';
 $temai[8] = 's-ohhara@te.d-sit.co.jp';
-$tcmai[8] = 'koho@sw.d-sit.co.jp';
+$tcmai[8] = 'koho@daido-its.co.jp';
 
 $title[9] = '問合せ（スタースチール卸）';
 $temai[9] = 'y-takada@bw.d-sit.co.jp, t-kurihara@ac.d-sit.co.jp';
-$tcmai[9] = 'koho@sw.d-sit.co.jp';
+$tcmai[9] = 'koho@daido-its.co.jp';
 
 $title[10] = '問合せ（スタースチール鍛造・機械加工）';
 $temai[10] = 'y-takada@bw.d-sit.co.jp, t-kurihara@ac.d-sit.co.jp';
-$tcmai[10] = 'koho@sw.d-sit.co.jp';
+$tcmai[10] = 'koho@daido-its.co.jp';
 
 $title[11] = '問合せ（まかせて！勤務表）';
 $temai[11] = 'k-shimizu@hr.d-sit.co.jp, s-ohhara@te.d-sit.co.jp';
-$tcmai[11] = 'koho@sw.d-sit.co.jp';
+$tcmai[11] = 'koho@daido-its.co.jp';
 
 $title[12] = '問合せ（愛ちゃん自立支援）';
 $temai[12] = 's-ohhara@te.d-sit.co.jp, k-nomura@sy.d-sit.co.jp';
-$tcmai[12] = 'koho@sw.d-sit.co.jp';
+$tcmai[12] = 'koho@daido-its.co.jp';
 
 $title[13] = '問合せ（まかせて！卸「鋼太郎」）';
 $temai[13] = 'y-takada@bw.d-sit.co.jp, t-kurihara@ac.d-sit.co.jp';
-$tcmai[13] = 'koho@sw.d-sit.co.jp';
+$tcmai[13] = 'koho@daido-its.co.jp';
 
 $subject     = $title[$type];
 $mymail      = $temai[$type];
